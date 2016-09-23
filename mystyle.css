@@ -1,0 +1,14 @@
+.draaien { 
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.vergroten{
+	-webkit-transform: scale(2, 2);
+	-moz-transform: scale(2, 2);
+	-o-transform: scale(2, 2);
+	-ms-transform: scale(2, 2);
+}
