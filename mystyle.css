@@ -10,10 +10,3 @@ body {
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
-
-.vergroten{
-	-webkit-transform: scale(2, 2);
-	-moz-transform: scale(2, 2);
-	-o-transform: scale(2, 2);
-	-ms-transform: scale(2, 2);
-}
