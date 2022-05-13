@@ -1,5 +1,3 @@
-
-   
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,16 +12,19 @@
     <link rel="icon" type="image/png" href="images/H.png"/>
   </head>
   <body>
-    <h1 class="text-center" id="titel">Harold van Zandbrink</h1>
-    <p class="text-center" id="noob">No noob!</p>  
+    <h1 class="text-center" id="titel">Is Harold al weg?</h1>
+    <p class="text-center" id="days" style="font-size:22px;"></p>  
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>
-      $('#titel').click(function(){
-         $(this).toggleClass('draaien');
-      });
+      const oneDay = 24 * 60 * 60 * 1000;
+      const endDate = new Date("2022-05-24");
+      const test = new Date("2022-05-23")
+      const diffDays = Math.round(Math.abs((endDate - new Date()) / oneDay)+1);
+      var text = diffDays > 0 ? "Hij is er nog " + diffDays + " dagen!" : diffDays == 0 ? "Vandaag is hij er voor het laatst!" : "Hij is voor goed weg!" 
+         $("#days").html(text);
     </script>
   </body>
 </html>
